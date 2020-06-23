@@ -12,7 +12,7 @@ import './App.css';
 
 //You must add your own API key here from Clarifai.
 const app = new Clarifai.App({
- apiKey: 'YOUR_API_HERE'
+ apiKey: '2afa9a8bf40f4ae8bc874f0aef93993c'
 });
 
 const particlesOptions = {
@@ -68,6 +68,9 @@ class App extends Component {
       bottomRow: height - (clarifaiFace.bottom_row * height)
     }
   }
+
+
+
 
   displayFaceBox = (box) => {
     this.setState({box: box});
